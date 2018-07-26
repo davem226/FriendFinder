@@ -46,7 +46,7 @@ app.post("/api/friends", function (req, res) {
     var newFriend = req.body;
 
     // Loop through friends array and determine best match
-    var minDifference = 0;
+    var minDifference;
     var bestFriend = "";
     var bestieImage = "";
     var difference = 0;
@@ -55,10 +55,8 @@ app.post("/api/friends", function (req, res) {
             difference += Math.abs(parseInt(newFriend.scores[j])
                 - parseInt(friends[i].scores[j]));
         }
-        console.log(difference);
-        console.log(i);
 
-        if (i === 0) {
+        if (i == 0) {
             // Default the first friend checked to the best friend
             minDifference = difference;
 
@@ -73,9 +71,6 @@ app.post("/api/friends", function (req, res) {
             bestFriend = friends[i].name;
             bestieImage = friends[i].photo;
         }
-        console.log(minDifference);
-        console.log(bestFriend);
-        console.log(bestieImage);
 
         // Reset difference value for next friend
         difference = 0;
