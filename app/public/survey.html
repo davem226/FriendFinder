@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Link jQuery -->
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <!-- Link CSS -->
+
+    <title>Friend Finder</title>
+</head>
+
+<body>
+    <h1>
+        Please tell us about yourself
+    </h1>
+
+    <div>
+        <p>Name:</p>
+        <input id="name" type="text">
+        <p>Link to image of yourself:</p>
+        <input id="photo" type="text">
+
+        <h2>Question 1</h2>
+        <p>Watching football all weekend sounds like a great time</p>
+        <label>
+            <input type="radio" name="q1" id="" value="1">Strongly Disagree
+            <input type="radio" name="q1" id="" value="2">Disagree
+            <input type="radio" name="q1" id="" value="3">Neutral
+            <input type="radio" name="q1" id="" value="4">Agree
+            <input type="radio" name="q1" id="" value="5">Strongly Agree
+        </label>
+    </div>
+    <div>
+        <h2>Question 2</h2>
+        <p>Watching netflix all weekend sounds like a great time</p>
+        <label>
+            <input type="radio" name="q2" id="" value="1">Strongly Disagree
+            <input type="radio" name="q2" id="" value="2">Disagree
+            <input type="radio" name="q2" id="" value="3">Neutral
+            <input type="radio" name="q2" id="" value="4">Agree
+            <input type="radio" name="q2" id="" value="5">Strongly Agree
+        </label>
+    </div>
+    <div>
+        <h2>Question 3</h2>
+        <p>It's a beautiful day. I'd much rather do something outside than in.</p>
+        <label>
+            <input type="radio" name="q3" id="" value="1">Strongly Disagree
+            <input type="radio" name="q3" id="" value="2">Disagree
+            <input type="radio" name="q3" id="" value="3">Neutral
+            <input type="radio" name="q3" id="" value="4">Agree
+            <input type="radio" name="q3" id="" value="5">Strongly Agree
+        </label>
+    </div>
+    <div>
+        <h2>Question 4</h2>
+        <p>I'm more of a night owl than an early bird.</p>
+        <label>
+            <input type="radio" name="q4" id="" value="1">Strongly Disagree
+            <input type="radio" name="q4" id="" value="2">Disagree
+            <input type="radio" name="q4" id="" value="3">Neutral
+            <input type="radio" name="q4" id="" value="4">Agree
+            <input type="radio" name="q4" id="" value="5">Strongly Agree
+        </label>
+    </div>
+    <div>
+        <h2>Question 5</h2>
+        <p>Dogs are better than cats.</p>
+        <label>
+            <input type="radio" name="q5" id="" value="1">Strongly Disagree
+            <input type="radio" name="q5" id="" value="2">Disagree
+            <input type="radio" name="q5" id="" value="3">Neutral
+            <input type="radio" name="q5" id="" value="4">Agree
+            <input type="radio" name="q5" id="" value="5">Strongly Agree
+        </label>
+    </div>
+    <div>
+        <h2>Question 6</h2>
+        <p>I like mindless chit chat.</p>
+        <label>
+            <input type="radio" name="q6" id="" value="1">Strongly Disagree
+            <input type="radio" name="q6" id="" value="2">Disagree
+            <input type="radio" name="q6" id="" value="3">Neutral
+            <input type="radio" name="q6" id="" value="4">Agree
+            <input type="radio" name="q6" id="" value="5">Strongly Agree
+        </label>
+    </div>
+    <div>
+        <h2>Question 7</h2>
+        <p>Please don't tell me your political opinions. No, you haven't solved human society.</p>
+        <label>
+            <input type="radio" name="q7" id="" value="1">Strongly Disagree
+            <input type="radio" name="q7" id="" value="2">Disagree
+            <input type="radio" name="q7" id="" value="3">Neutral
+            <input type="radio" name="q7" id="" value="4">Agree
+            <input type="radio" name="q7" id="" value="5">Strongly Agree
+        </label>
+    </div>
+    <div>
+        <h2>Question 8</h2>
+        <p>Clean, neat, tidy, organized; all tremendous personal qualities that I will never attain.</p>
+        <label>
+            <input type="radio" name="q8" id="" value="1">Strongly Disagree
+            <input type="radio" name="q8" id="" value="2">Disagree
+            <input type="radio" name="q8" id="" value="3">Neutral
+            <input type="radio" name="q8" id="" value="4">Agree
+            <input type="radio" name="q8" id="" value="5">Strongly Agree
+        </label>
+    </div>
+    <div>
+        <h2>Question 9</h2>
+        <p>Playing video games all day sounds like a great time.</p>
+        <label>
+            <input type="radio" name="q9" id="" value="1">Strongly Disagree
+            <input type="radio" name="q9" id="" value="2">Disagree
+            <input type="radio" name="q9" id="" value="3">Neutral
+            <input type="radio" name="q9" id="" value="4">Agree
+            <input type="radio" name="q9" id="" value="5">Strongly Agree
+        </label>
+    </div>
+    <div>
+        <h2>Question 10</h2>
+        <p>I'm filling out this survey because I have no friends.</p>
+        <label>
+            <input type="radio" name="q10" id="" value="1">Strongly Disagree
+            <input type="radio" name="q10" id="" value="2">Disagree
+            <input type="radio" name="q10" id="" value="3">Neutral
+            <input type="radio" name="q10" id="" value="4">Agree
+            <input type="radio" name="q10" id="" value="5">Strongly Agree
+        </label>
+    </div>
+
+    <button id="submit-data">Submit</button>
+    <br>
+    <a href="/">Home</a>
+    <a href="/api/friends">API Friends List</a>
+
+    <script>
+        // Generate click handler for submit button
+        $("#submit-data").click(function () {
+
+            // Store user input in new object
+            var addFriend = {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val().trim(),
+                scores: [
+                    $("input[name='q1']:checked").attr("value"),
+                    $("input[name='q2']:checked").attr("value"),
+                    $("input[name='q3']:checked").attr("value"),
+                    $("input[name='q4']:checked").attr("value"),
+                    $("input[name='q5']:checked").attr("value"),
+                    $("input[name='q6']:checked").attr("value"),
+                    $("input[name='q7']:checked").attr("value"),
+                    $("input[name='q8']:checked").attr("value"),
+                    $("input[name='q9']:checked").attr("value"),
+                    $("input[name='q10']:checked").attr("value"),
+                ]
+            }
+
+            // Post new customer to server
+            $.post("/api/friends", addFriend)
+                .then(function (data) {
+                    alert(data.output + "\n" + data.friend + "\n" + data.image);
+                });
+        });
+    </script>
+
+</body>
+
+</html>
